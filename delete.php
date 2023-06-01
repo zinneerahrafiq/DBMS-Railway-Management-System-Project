@@ -1,0 +1,84 @@
+
+<html>
+<head>
+  <title>Ticket Deletion Form</title>
+  <style>
+    /* Add some basic styling */
+    body {
+      font-family: sans-serif;
+      background-color: lightblue;
+    }
+
+    form {
+      width: 500px;
+      background-color: lightblue;
+      margin: 0 auto;
+      text-align: center;
+      padding: 20px;
+      border: 1px solid lightblue;
+      border-radius: 5px;
+    }
+
+    /* Style the input field */
+    input[type="text"] {
+      width: 60%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+    }
+
+    /* Style the submit button */
+    button[type="submit"] {
+      width: 20%;
+      background-color: darkblue;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    /* Style the label */
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 10px;
+    }
+     /* Add some styling to the navigation bar */
+     nav {
+      background-color: darkblue;
+      padding: 30px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      margin: 0 10px;
+    }
+
+    nav a:hover {
+      color: lightgray;
+    }
+
+  </style>
+</head>
+<body>
+  <body>
+    <nav>
+      <a href="index.php">Home</a>
+      <a href="nayainsert.php">Book</a>
+      <a href="delete.php">Cancel</a>
+    </nav>
+  <form action="deletekaro.php" method="POST">
+    <label for="ticket_id">Enter Ticket ID to Delete:</label>
+    <input type="text" id="ticket_id" name="ticket_id" placeholder="Enter ticket ID" required>
+    <br>
+    <button type="submit" name="submit">Delete</button>
+  </form>
+</body>
+</html>

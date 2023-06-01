@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Railway Management System</title>
+    <style>
+      body {
+        background-color: lightblue;
+        text-align: center;
+        font-family: sans-serif;
+      }
+      h1 {
+        color: white;
+        text-shadow: 2px 2px 4px #000000;
+      }
+      .options {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+      }
+      form {
+        display: flex;
+        flex-direction: row; /* Change the value of flex-direction to column */
+        justify-content: space-between;
+        width: 80%;
+        margin: 0 auto 20px;
+      }
+      label {
+        width: 45%;
+        margin: 0;
+        text-align: right;
+        padding-right: 10px;
+      }
+      input[type="text"] {
+        width: 50%;
+        height: 30px;
+        font-size: 18px;
+        border: 2px solid blue;
+        border-radius: 5px;
+        padding: 0 10px;
+      }
+      .option {
+        background-color: white;
+        border: 2px solid blue;
+        border-radius: 10px;
+        box-shadow: 4px 4px 8px #888888;
+        color: blue;
+        font-size: 20px;
+        padding: 20px 40px;
+        text-decoration: none;
+        margin: 20px 0;
+        transition: all 0.5s;
+      }
+      .option:hover {
+        background-color: lightgrey;
+        transform: scale(1.1);
+      }
+    </style>
+</head>
+<body>
+  <h1>Welcome to the Railway Management System</h1>
+  <div class="options">
+    <form action="search.php" method="post">
+      <label for="train-search">Search Train by Train No:</label>
+      <input type="text" id="train-search" name="train-search" placeholder="Enter train number">
+      <button type = "submit" name = "trin-search-button" > Search By Train </button>
+      <br>
+      <label for="ticket-search">Search Ticket by Ticket No:</label>
+      <input type="text" id="ticket-search" name="ticket-search" placeholder="Enter ticket number">
+     
+      <button type = "submit" name = "ticket-search-button" > Search By Ticket </button>
+    </form>
+    
+    
+    
+    <a class="option" href="book.html">Book Ticket</a>
+    <a class="option" href="cancel.html">Cancel Ticket</a>
+  </div>
+</body>
+</html>
